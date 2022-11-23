@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Basic HTML Form</title>
+  </head>
+  <body>
+    <h1>Basic HTML Form</h1>
+    <form method="post" action="#">
+      <fieldset>
+        <legend>Name</legend>
+        <p>
+          <label for="fname">First Name </label>
+          <br />
+          <input type="text" name="fname" id="fname" size="30" />
+        </p>
+        <p>
+          <label for="lname">Last Name </label>
+          <br />
+          <input type="text" name="lname" id="lname" size="30" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Other Questions</legend>
+        <p>
+          Choose a drink:
+          <br />
+          <input type="radio" name="drink" id="coffee" value="coffee" />
+          <label for="coffee">coffee</label>
+          <br />
+          <input
+            checked="checked"
+            type="radio"
+            name="drink"
+            id="tea"
+            value="tea"
+          />
+          <label for="tea">tea</label>
+          <br />
+          <input type="radio" name="drink" id="hotchoc" value="hot_chocolate" />
+          <label for="hotchoc">hot chocolate</label>
+          <br />
+        </p>
+        <p>
+          What ice cream do you like?
+          <br />
+          <input
+            type="checkbox"
+            name="icecream"
+            id="icecream_chocolate"
+            value="chocolate"
+          />
+          <label for="icecream_chocolate">Chocolate</label>
+          <br />
+          <input
+            type="checkbox"
+            name="icecream"
+            id="icecream_hcp"
+            value="herrell&#39;s chocolate pudding"
+          />
+          <label for="icecream_hcp">Chocolate Pudding</label>
+          <br />
+          <input
+            checked="checked"
+            type="checkbox"
+            name="icecream"
+            id="icecream_cpb"
+            value="chocolate peanut butter"
+          />
+          <label for="icecream_cpb">Chocolate Peanut Butter</label>
+          <br />
+          <input
+            type="checkbox"
+            name="icecream"
+            id="icecream_vanilla"
+            value="vanilla"
+          />
+          <label for="icecream_vanilla">Vanilla</label>
+          <br />
+          <input
+            type="checkbox"
+            name="icecream"
+            id="icecream_strawberry"
+            value="strawberry"
+          />
+          <label for="icecream_strawberry">Strawberry</label>
+        </p>
+        <p>
+          <label for="school">Select a school:</label>
+          <br />
+          <select name="school" id="school">
+            <option selected="" 00="selected">Harvard</option>
+            <option>IUG</option>
+          </select>
+        </p>
+        <p>
+          <label for="comments">Please provide comments:</label>
+          <br />
+          <textarea rows="5" cols="32" name="comments" id="comments"></textarea>
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" />
+      </p>
+    </form>
+  </body>
+</html>
